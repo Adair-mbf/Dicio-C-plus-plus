@@ -1,0 +1,17 @@
+#include <iostream>
+#include <iomanip>
+#include <map>
+
+using namespace std;
+
+int main() {
+  std::map<std::string, std::string> variavel={ 
+  {"elemento1 elemento2 elemento3", "elementonomeatoriododicionario"},
+  };
+  string elementodigitado1, elementodigitado2, elementodigitado3; 
+  cin>>elementodigitado1>>elementodigitado2>>elementodigitado3;  
+  string chave=elementodigitado1+" "+elementodigitado2+" "+elementodigitado3; 
+  cout<<variavel[chave]<<endl; 
+
+  return 0;
+}
