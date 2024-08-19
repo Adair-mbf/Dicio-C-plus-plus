@@ -1,0 +1,17 @@
+#include <iostream>
+#include <iomanip>
+#include <map> //adicione o #include <map>
+
+using namespace std;
+
+int main() {
+  std::map<std::string, std::string> variavel={ //adicione essas coisas esquisitas que eu não sei o que é ainda antes do dicionário
+  {"elemento1 elemento2 elemento3", "elementonomeatoriododicionario"},
+  };
+  string elementodigitado1, elementodigitado2, elementodigitado3; //chame as variavéis de procura
+  cin>>elementodigitado1>>elementodigitado2>>elementodigitado3;  //leie-as
+  string chave=elementodigitado1+" "+elementodigitado2+" "+elementodigitado3; //chame a variável chave e armazene nela os elementos digitado com o espaçamento entre aspas
+  cout<<variavel[chave]<<endl; //para imprimir o que procura, realize o comando
+
+  return 0;
+}
